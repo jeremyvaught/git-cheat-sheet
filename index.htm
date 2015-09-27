@@ -63,24 +63,99 @@
                       <li><span class="cmd">L</span><span = class="dsc">low</span></li>
                       <li><span class="cmd">&lt;ctrl&gt; u</span><span = class="dsc">up</span></li>
                       <li><span class="cmd">&lt;ctrl&gt; d</span><span = class="dsc">down</span></li>
+                      <li><span class="cmd">e</span><span = class="dsc">end of word</span></li>
+                      <li><span class="cmd">E</span><span = class="dsc">end of
+                              word (jump punctuation)</span></li>
+                      <li><span class="cmd">w</span><span = class="dsc">beginning of word</span></li>
+                      <li><span class="cmd">W</span><span =
+                              class="dsc">beginning of word (jump punctuation)</span></li>
+                      <li><span class="cmd">b</span><span = class="dsc">back to
+                          end of word</span></li>
+                      <li><span class="cmd">B</span><span =
+                              class="dsc">back to end of word (jump punctuation)</span></li>
+                      <li><span class="cmd">f/F char</span><span =
+                              class="dsc">find char forward/back</span></li>
+                      <li><span class="cmd">t/T char</span><span =
+                              class="dsc">till char forward/back</span></li>
+                      <li><span class="cmd">; & ,</span><span =
+                              class="dsc">repeat forward/back t/T & f/F</span></li>
+                      <li><span class="cmd">/</span><span = class="dsc">search</span></li>
+                      <li><span class="cmd">n/N</span><span = class="dsc">repeat
+                          search forward/back</span></li>
+                      <li><span class="cmd">&lt;ctrl&gt; ^</span><span =
+                              class="dsc">beginning of line</span></li>
+                      <li><span class="cmd">&lt;ctrl&gt; $</span><span =
+                              class="dsc">end of line</span></li>
+                      <li><span class="cmd">{/}</span><span = class="dsc">jump
+                              forward/back paragraph (blank line)</span></li>
+                      <li><span class="cmd"></span><span = class="dsc"></span></li>
+                      <li><span class="cmd"></span><span = class="dsc"></span></li>
                   </ul>
               </div>
               <div class="medium-4 columns">
-                  <h2 class="subheader">Movement</h2>
+                  <h2 class="subheader">Edit</h2>
                   <ul>
-                      <li><span class="cmd">h</span><span = class="dsc">left</span></li>
-                      <li><span class="cmd">j</span><span = class="dsc">down</span></li>
-                      <li><span class="cmd">k</span><span = class="dsc">up</span></li>
-                      <li><span class="cmd">l</span><span = class="dsc">right</span></li>
+                      <li><span class="cmd">ciw</span><span = class="dsc">clear
+                          inner word</span></li>
+                      <li><span class="cmd">cit</span><span = class="dsc">clear
+                          inner tag</span></li>
+                      <li><span class="cmd">vip</span><span = class="dsc">select
+                          inner paragraph</span></li>
+                      <li><span class="cmd">ci surrounding-char</span><span =
+                              class="dsc">change inner surrounding-char</span></li>
+                      <li><span class="cmd">daw</span><span = class="dsc">delete
+                          a word</span></li>
+                      <li><span class="cmd">dip</span><span = class="dsc">delete
+                          inner paragraph</span></li>
+                      <li><span class="cmd">dap</span><span = class="dsc">delete
+                          around paragraph</span></li>
+                      <li><span class="cmd">&gt;ip</span><span =
+                              class="dsc">indent inner paragraph</span></li>
+                      <li><span class="cmd">.</span><span = class="dsc">repeat
+                              indent</span></li>
+                      <li><span class="cmd">=ip</span><span =
+                              class="dsc">re-align inner paragraph</span></li>
+                      <li><span class="cmd">o/O</span><span = class="dsc">new
+                              line below/above</span></li>
+                      <li><span class="cmd"></span><span = class="dsc"></span></li>
                   </ul>
               </div>
               <div class="medium-4 columns">
-                  <h2 class="subheader">Movement</h2>
+                  <h2 class="subheader">File</h2>
                   <ul>
-                      <li><span class="cmd">h</span><span = class="dsc">left</span></li>
-                      <li><span class="cmd">j</span><span = class="dsc">down</span></li>
-                      <li><span class="cmd">k</span><span = class="dsc">up</span></li>
-                      <li><span class="cmd">l</span><span = class="dsc">right</span></li>
+                      <li><span class="cmd">:e</span><span =
+                              class="dsc">open file</span></li>
+                      <li><span class="cmd">:split / :vsplit</span><span =
+                              class="dsc">split current file</span></li>
+                      <li><span class="cmd"></span><span = class="dsc"></span></li>
+                      <li><span class="cmd"></span><span = class="dsc"></span></li>
+                  </ul>
+              </div>
+              <div class="medium-4 columns">
+                  <h2 class="subheader">Tab</h2>
+                  <ul>
+                      <li><span class="cmd">:tabnew</span><span =
+                              class="dsc">tab new</span></li>
+                      <li><span class="cmd">gt/gT</span><span =
+                              class="dsc">goto next/previous tab</span></li>
+                      <li><span class="cmd">&lt;ctrl&gt;-w T</span><span =
+                              class="dsc">break current window out to new tab</span></li>
+                      <li><span class="cmd"></span><span = class="dsc"></span></li>
+                  </ul>
+              </div>
+              <div class="medium-4 columns">
+                  <h2 class="subheader">Window</h2>
+                  <ul>
+                      <li><span class="cmd">:new / :vnew</span><span =
+                              class="dsc">split</span></li>
+                      <li><span class="cmd">:split / :vsplit</span><span =
+                              class="dsc">split current file</span></li>
+                      <li><span class="cmd">&lt;ctrl&gt;-w JK/HL</span><span =
+                              class="dsc">move window</span></li>
+                      <li><span class="cmd">&lt;ctrl&gt;-w
+                              +-/&lt;&gt;/=</span><span = class="dsc">resize
+                              window</span></li>
+                      <li><span class="cmd"></span><span = class="dsc"></span></li>
                   </ul>
               </div>
         </div>
